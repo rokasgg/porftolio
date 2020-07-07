@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .App-logo {
@@ -22,10 +28,31 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url("./assets/BG3.jpg");
+  background-size: cover;
+}
+.page-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.header-title {
+  background-color: rgba(17, 7, 7, 0);
+
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  display: grid;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +62,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.contact-field {
+  min-height: 100vh;
+}
+.navigation-field {
+  background-color: rgba(245, 222, 179, 0.137);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 150px;
+}
+
+.nav-item {
+  color: white;
+  font-family: IBM Plex Mono;
+  font-size: large;
+  /* background-color: teal; */
+  display: grid;
+  gap: 10px;
+  height: 100px;
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+}
+.nav-item:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.mainText {
+  font-family: IBM Plex Mono;
+}
+.earth-gif {
+  height: 350px;
+  width: 350px;
+
+  position: absolute;
+  top: 2%;
+  left: 13%;
 }
