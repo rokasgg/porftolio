@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import FirstPage from "./screens/firstPage";
 import SecondPage from "./screens/secondPage";
 import ThirdPage from "./screens/thirdPage";
