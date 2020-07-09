@@ -1,14 +1,23 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class NavigationBar extends Component {
   render() {
     return (
       <div className="navigation-field">
         <div className="nav-list">
-          <div className="nav-item">Home</div>
-          <div className="nav-item">About</div>
-          <div className="nav-item">Skills</div>
-          <div className="nav-item">Contact</div>
+          <Link to="/" className="nav-item">
+            Home
+          </Link>
+          <Link to="/about" className="nav-item">
+            About
+          </Link>
+          <Link to="/skills" className="nav-item">
+            Skills
+          </Link>
+          <Link to="/contact" className="nav-item">
+            Contact
+          </Link>
         </div>
       </div>
     );

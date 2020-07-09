@@ -8,18 +8,26 @@ class FirstPage extends Component {
       "page height:",
       window.innerHeight
     );
+    console.log("Component home has mounted");
+  }
+  componentWillUnmount() {
+    console.log("Component home has unmounted");
   }
   render() {
     return (
       <div>
         <header className="App-header">
           <div className="header-title">
-            <img src={require("../assets/earth.gif")} className="earth-gif" />
+            <div className="earth"></div>
+            <img
+              src={require("../assets/Oficial-Globe.gif")}
+              className="earth-gif"
+            />
             <p style={{ fontSize: 75 }} className="mainText">
-              Hi, I'm Rokas Gegzna!
+              Hi, I'm Rokas!
             </p>
             <p style={{ fontSize: 35 }} className="mainText">
-              and I do Front-end developing
+              I do Front-end developing
             </p>
           </div>
         </header>
