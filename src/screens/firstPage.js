@@ -22,6 +22,7 @@ class FirstPage extends Component {
             <img
               src={require("../assets/Oficial-Globe.gif")}
               className="earth-gif"
+              alt='globe'
             />
             <p style={{ fontSize: 75 }} className="mainText">
               Hi, I'm Rokas!

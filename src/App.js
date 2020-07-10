@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import FirstPage from "./screens/firstPage";
-import SecondPage from "./screens/secondPage";
+import SecondPage from "./screens/aboutPage/secondPage";
 import ThirdPage from "./screens/thirdPage";
 import ContactPage from "./screens/contact";
 import NavigationBar from "./screens/navigation";
