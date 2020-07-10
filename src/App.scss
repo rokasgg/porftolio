@@ -134,46 +134,46 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-
 }
 
-.lovable-list-button-wrapper{
-  display:grid;
+.lovable-list-button-wrapper {
+  display: grid;
   // background-color:  #EAF;
-  grid-template-areas: 
-    "a b";
+  grid-template-areas: "a b";
   margin-top: 10px;
-  width: 65%; align-self: center;
+  width: 65%;
+  align-self: center;
   height: 40px;
 }
 
-.lovable-list-button{
+.lovable-list-button {
   width: 150px;
-  height: 30px; grid-area: a;
+  height: 30px;
+  grid-area: a;
 
   align-self: center;
-  justify-self: center;
+  justify-self: end;
 }
-.lovable-list-button2{
+.lovable-list-button2 {
   width: 150px;
-  height: 30px; grid-area: b;  
+  height: 30px;
+  grid-area: b;
 
   align-self: center;
-  justify-self: center;
-
+  justify-self: start;
 }
-.lovable-list-button2:hover, 
-.lovable-list-button:hover{
+.lovable-list-button2:hover,
+.lovable-list-button:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .lovable-list-wrapper {
   display: flex;
   position: absolute;
 
-  left:0px;
-  animation:moving 10s infinite;
+  left: 0px;
+  animation: moving 10s infinite;
   transition: transform 300ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
 
   .lovable-list-item {
@@ -183,35 +183,37 @@
     background-color: teal;
 
     opacity: 0.5;
-  
   }
 }
-
-$i:0;
-@for $i from 0 through 3{
-  .lovable-list-slider.active-slider-#{$i} #lovable-list-item-#{$i}  {
+.lovable-list-item :hover {
+  cursor: pointer;
+}
+$i: 0;
+@for $i from 0 through 3 {
+  .lovable-list-slider.active-slider-#{$i} #lovable-list-item-#{$i} {
     opacity: 1;
   }
 }
-
+.lovable-list-item :hover {
+  cursor: pointer;
+}
 .lovable-list-slider {
   height: 250px;
   width: 250px;
   position: relative;
   max-width: 226px;
   margin: 0 auto;
-// &:after{
-//     content: '';
-//     display: block;
-//     width: 295px;
-//     height: 250px;
-//     outline: 5px solid #61DAFB;
-//     position: absolute;
-//     left:0px;
-//     top:0px;
-//   }
+  // &:after{
+  //     content: '';
+  //     display: block;
+  //     width: 295px;
+  //     height: 250px;
+  //     outline: 5px solid #61DAFB;
+  //     position: absolute;
+  //     left:0px;
+  //     top:0px;
+  //   }
 }
-
 
 @keyframes moving {
   // from{
