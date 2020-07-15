@@ -2,40 +2,84 @@ import React, { Component } from "react";
 import {
   FaArrowAltCircleLeft,
   FaArrowAltCircleRight,
+  FaFutbol,
+  FaBeer,
+  FaSkiing,
+  FaCannabis,
 } from "react-icons/fa";
-import './aboutCss.scss'
+import "./aboutCss.scss";
 const TESTDATA = [
   {
     context: "vienas",
     id: 0,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill1.png")} />
+      );
+    },
   },
   {
     context: "du",
     id: 1,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill2.png")} />
+      );
+    },
   },
   {
     context: "trys",
     id: 2,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill1.png")} />
+      );
+    },
   },
   {
     context: "keturi",
     id: 3,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill2.png")} />
+      );
+    },
   },
   {
     context: "vienas",
     id: 4,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill1.png")} />
+      );
+    },
   },
   {
     context: "du",
     id: 5,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill2.png")} />
+      );
+    },
   },
   {
     context: "trys",
     id: 6,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill1.png")} />
+      );
+    },
   },
   {
     context: "keturi",
     id: 7,
+    type: function () {
+      return (
+        <img className="skillImage" src={require("../../assets/skill2.png")} />
+      );
+    },
   },
 ];
 class SecondPage extends Component {
@@ -77,10 +121,8 @@ class SecondPage extends Component {
 
   render() {
     return (
-      <div className="about-layout" style={{ backgroundColor: "cyan" }}>
-        <div className='box'>
-
-
+      <div className="about-layout">
+        <div className="box">
           <div
             className={`lovable-list-slider active-slider-${this.state.item.id}`}
           >
@@ -89,7 +131,7 @@ class SecondPage extends Component {
               style={{
                 transform: `translateX(-${
                   this.state.item.id * (100 / this.state.itemsList.length)
-                  }%)`,
+                }%)`,
               }}
             >
               {this.state.itemsList.map((item) => {
@@ -99,25 +141,25 @@ class SecondPage extends Component {
                     className="lovable-list-item"
                     key={item.id}
                     onClick={() => this.pressOnItem(item)}
-                    style={item.id % 2 ? { backgroundColor: 'yellow' } : null}
                   >
-                    {item.context}
+                    {item.type()}
                   </div>
                 );
               })}
             </div>
           </div>
 
-          <div className="lovable-list-button-wrapper">
+          {/* <div className="lovable-list-button-wrapper">
             <div className="lovable-list-button" onClick={this.goToNextItem}>
-
               <FaArrowAltCircleRight />
             </div>
-            <div className="lovable-list-button2" onClick={this.goToPreviousItem}>
-
+            <div
+              className="lovable-list-button2"
+              onClick={this.goToPreviousItem}
+            >
               <FaArrowAltCircleLeft />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     );

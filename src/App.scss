@@ -134,6 +134,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgb(190, 40, 40);
 }
 
 .lovable-list-button-wrapper {
@@ -206,7 +207,7 @@
 // @for $i from 0 through 4 {
 //   .lovable-list-slider.active-slider-#{$i} #lovable-list-item-#{$i} {
 //     opacity: 1;
-    
+
 //   }
 // }
 
