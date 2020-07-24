@@ -8,77 +8,99 @@ import {
   FaCannabis,
 } from "react-icons/fa";
 import "./aboutCss.scss";
+// import photosvg from "./photosvg.svg";
+import PhotoSvg from "./svgFiles/photosvg";
+import RealPhoto from "./svgFiles/realPhoto";
+import BoxingGloves from "./svgFiles/boxingGloves";
+import TraelSvg from "./svgFiles/travel";
+import FoodSvg from "./svgFiles/food";
+import NetflixSvg from "./svgFiles/netflix";
+import FootballSvgs from "./svgFiles/football";
+import SkiiSvg from "./svgFiles/ski";
+
 const TESTDATA = [
   {
     context: "vienas",
     id: 0,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill1.png")} />
-      );
+      return <SkiiSvg />;
     },
   },
   {
     context: "du",
     id: 1,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill2.png")} />
-      );
+      return <FootballSvgs />;
     },
   },
   {
     context: "trys",
     id: 2,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill1.png")} />
-      );
+      return <BoxingGloves />;
     },
   },
   {
     context: "keturi",
     id: 3,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill2.png")} />
-      );
+      return <TraelSvg />;
     },
   },
   {
     context: "vienas",
     id: 4,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill1.png")} />
-      );
+      return <FoodSvg />;
     },
   },
   {
     context: "du",
     id: 5,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill2.png")} />
-      );
+      return <NetflixSvg />;
+    },
+  },
+  {
+    context: "vienas",
+    id: 6,
+    type: function () {
+      return <SkiiSvg />;
+    },
+  },
+  {
+    context: "du",
+    id: 7,
+    type: function () {
+      return <FootballSvgs />;
     },
   },
   {
     context: "trys",
-    id: 6,
+    id: 8,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill1.png")} />
-      );
+      return <BoxingGloves />;
     },
   },
   {
     context: "keturi",
-    id: 7,
+    id: 9,
     type: function () {
-      return (
-        <img className="skillImage" src={require("../../assets/skill2.png")} />
-      );
+      return <TraelSvg />;
+    },
+  },
+  {
+    context: "vienas",
+    id: 10,
+    type: function () {
+      return <FoodSvg />;
+    },
+  },
+  {
+    context: "du",
+    id: 11,
+    type: function () {
+      return <NetflixSvg />;
     },
   },
 ];
@@ -161,6 +183,7 @@ class SecondPage extends Component {
             </div>
           </div> */}
         </div>
+        <div className=""></div>
       </div>
     );
   }

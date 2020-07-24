@@ -11,7 +11,11 @@
   justify-content: center;
 }
 @mixin white-gradient {
-  background: linear-gradient(to right, cyan 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    to right,
+    rgb(146, 30, 30) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .lovable-list-slider {
   position: relative;
@@ -42,7 +46,7 @@
 .lovable-list-wrapper {
   display: grid;
   width: 100%;
-  animation: scroll 10s linear infinite;
+  // animation: scroll 15s linear infinite;
   grid-template-columns: repeat(100, 25%);
 }
 .lovable-list-item {
@@ -70,6 +74,80 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-383px * 4));
+    transform: translateX(calc(-383px * 6));
   }
+}
+#photo {
+  width: 420px;
+  height: 250px;
+}
+#photo:hover {
+  height: 260px;
+
+  //ski SVG
+  #colorSiluet {
+    visibility: visible;
+  }
+  #whiteSiluet {
+    visibility: hidden;
+  }
+
+  //netflix svg
+
+  #netflixText {
+    fill: red;
+    stroke: none;
+  }
+
+  //boxing svg
+  #leftglove {
+    fill: red;
+  }
+  #rightglove {
+    fill: red;
+  }
+
+  // grill svg
+  #flame {
+    stroke: none;
+    fill: orange;
+  }
+  #top,
+  #legs {
+    stroke: none;
+    fill: rgb(58, 56, 56);
+  }
+  #grill {
+    stroke: grey;
+  }
+
+  //traveling svg
+
+  #plane {
+    stroke: none;
+    fill: white;
+  }
+  #windows {
+    fill: rgb(31, 27, 27);
+  }
+  #wind {
+    stroke: white;
+  }
+  //football svg
+  #lightplayer {
+    visibility: visible;
+  }
+  #player {
+    visibility: hidden;
+  }
+}
+#netflixText {
+  fill: none;
+  stroke: white;
+}
+#lightplayer {
+  visibility: hidden;
+}
+#colorSiluet {
+  visibility: hidden;
 }

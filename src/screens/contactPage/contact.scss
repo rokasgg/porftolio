@@ -1,0 +1,29 @@
+.contact-field {
+  min-height: 100vh;
+  background-color: #ffb319;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-border {
+  border: solid 3px whitesmoke;
+  width: 856px;
+  height: 596px;
+  outline: solid 3px whitesmoke;
+}
+#blood {
+  animation: drop 3s infinite;
+  transform-origin: center;
+
+  // background-color: lightcoral;
+  height: 30px;
+}
+@keyframes drop {
+  from {
+    height: 30px;
+  }
+  to {
+    height: 90px;
+  }
+}

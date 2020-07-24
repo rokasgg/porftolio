@@ -3,7 +3,7 @@ import "./App.scss";
 import FirstPage from "./screens/firstPage";
 import SecondPage from "./screens/aboutPage/secondPage";
 import ThirdPage from "./screens/thirdPage";
-import ContactPage from "./screens/contact";
+import ContactPage from "./screens/contactPage/contact";
 import NavigationBar from "./screens/navigation";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
